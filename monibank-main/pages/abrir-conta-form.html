@@ -59,34 +59,39 @@
             </div>
 
             <form class="principal__formulario" data-formulario>
+                <!--Campo Nome-->
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" class="campo__escrita" minlength="4"/>
+                    <input type="text" name="nome" id="nome" class="campo__escrita" minlength="4" required/>
                     <span class="mensagem-erro"></span>
                 </fieldset>
-
+                <!--Campo Email-->
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="email">E-mail</label>
-                    <input type="email" name="email" id="email" class="campo__escrita" minlength="4" />
+                    <input type="email" name="email" id="email" class="campo__escrita" minlength="4" required/>
                     <span class="mensagem-erro"></span>
                 </fieldset>
+                <!--Campo RG-->
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="rg">RG</label>
-                    <input type="text" name="rg" id="rg" class="campo__escrita campo__escrita--menor" />
+                    <input type="text" name="rg" id="rg" class="campo__escrita campo__escrita--menor" required/>
                     <span class="mensagem-erro"></span>
                 </fieldset>
+                <!--Campo CPF-->
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
                     <input type="text" name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required minlength="11" maxlength="14"/>
                     <span class="mensagem-erro"></span>
                 </fieldset>
+                <!--Campo Data de Nascimento-->
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="aniversario">Data de nascimento</label>
-                    <input type="date" name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" />
+                    <input type="date" name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" required/>
                     <span class="mensagem-erro"></span>
                 </fieldset>
+                <!--Campo Condições e Termos-->
                 <fieldset class="formulario__termos">
-                    <input type="checkbox" name="termos" class="termos__input">
+                    <input type="checkbox" name="termos" class="termos__input" required>
                     <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
                         descrito na Política
                         de
@@ -95,6 +100,7 @@
                 </fieldset>
 
                 <div>
+                    <!--Campo Submit-->
                     <input type="submit" value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar>
                     <span class="mensagem-erro"></span>
                 </div>
