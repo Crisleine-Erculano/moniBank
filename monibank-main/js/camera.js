@@ -24,4 +24,7 @@ botaoTirarFoto.addEventListener('click', function () {
 
    campoCamera.style.display = "none";
    mensagem.style.display = "block";
+
+   // parar camera
+   video.srcObject.getTracks().forEach(track => track.stop())
 });
