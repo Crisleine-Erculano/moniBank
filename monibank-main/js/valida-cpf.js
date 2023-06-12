@@ -1,4 +1,4 @@
-export function ehUmCPF(campo) {
+export default function ehUmCPF(campo) {
    const cpf = campo.value.replace(/\.|-/g, "");
    if (validaNumerosRepetidos(cpf)
       || validaPrimeiroDigito(cpf)
